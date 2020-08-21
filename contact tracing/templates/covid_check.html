@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head%}
+<title> covid check </title>
+{% endblock %}
+
+
+{% block body%}
+ 
+
+<div class="container"> 
+ <p>wekcome and thank you for loggin in </p>
+ <h2>get started</h2>
+ <div>
+    <ul>
+        <li><a class="btn btn-primary" href="/covid_check/self_check">selfcheck</a></li>
+        <p>this is a self safety check to make sure you do not experience any of the symptons
+        </p>
+        <li><a class="btn btn-primary" href="/covid_check/background_check">background  check</a></li>
+        <p>this is to ascertain you are complying with the rules and also a check if you may have come into contact
+            with a person with covid
+        </p>
+    </ul>
+
+ </div>
+ 
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head%}
+ <title> covid check </title>
+{% endblock %}
+
+
+{% block body%}
+    <div  class="container" style="margin-block:center;" >
+        <ul class="list-group">
+        
+            <li class="list-group-item active">do you have any of the symptons below:</li>
+            <li class="list-group-item ">fever</li>
+            <li class="list-group-item">dry cough</li>
+            <li class="list-group-item">tiredness</li>
+            <li class="list-group-item">aches and pains</li>
+            <li class="list-group-item">diarrhoea</li>
+            <li class="list-group-item">sorethroat</li>
+            <li class="list-group-item">head ache</li>
+            <li class="list-group-item">loss of taste and smell</li>
+            <li class="list-group-item">loss of breath</li>
+            <li class="list-group-item">chest pain</li>
+            <li class="list-group-item">loss of speech and movement</li>
+          </ul>
+          
+          <hr>
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              YES
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" href="#collapse2"
+                aria-expanded="false" aria-controls="multiCollapseExample2">NO</button>
+          </p>
+          <div class="row">
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                if you experience more than four of the 
+                symptons please seek advise from a medical proffession but dont panic
+         
+            </div>
+          </div>
+         </div>
+         <div class="col">
+            <div class="collapse" id="collapse2">
+              <div class="card card-body">
+                  if you do not... please stay safe and continue respecting the social distance 
+                  dont forget to sanitize and smile
+           
+              </div>
+            </div>
+           </div>
+         
+        
+
+
+
+
+
+       
+    </div>
+
+       
+        
+
+   
+      
+    
+
+
+
+{% endblock %}

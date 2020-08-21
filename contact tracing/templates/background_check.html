@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head%}
+<title> covid check </title>
+{% endblock %}
+
+
+{% block body%}
+   <div class="container">
+   <div class="form-check">
+    <input type="checkbox" id="back_check" name="back_check" value="back_check">
+    <label for="vehicle1"> are you in isolation</label><br>
+    <input type="checkbox" id="back_check" name="back_check" value="back_check">
+    <label for="vehicle2"> do you constasntly maintain social distance</label><br>
+    <input type="checkbox" id="back_check" name="back_check" value="back_check">
+    <label for="vehicle2"> have you been quarantined for motre than 14 days</label><br>
+    <input type="checkbox" id="back_check" name="back_check" value="back_check">
+    <label for="vehicle2">Did you go to high-risk areas</label><br>
+    
+    <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+    </div>
+
+
+{% endblock %}
